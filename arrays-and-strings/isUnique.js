@@ -1,6 +1,6 @@
 'use strict';
 
-// test npm run test ./arrays-and-strings/isUnique/test/isUnique.test.js`
+// test npm run test ./arrays-and-strings/test/isUnique.test.js`
 // TODO: implement an algorithm to determine if a string has all unique characters.
 
 function isUnique(str) {
