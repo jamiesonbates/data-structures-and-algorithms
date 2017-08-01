@@ -13,8 +13,21 @@ function isUnique(str) {
   return true;
 }
 
-
-
+// with data structure (object)
+// function isUnique(str) {
+//   const obj = {};
+//
+//   for (const letter of str) {
+//     if (!obj.hasOwnProperty(letter)) {
+//       obj[letter] = 1;
+//     }
+//     else {
+//       return false;
+//     }
+//   }
+//
+//   return true;
+// }
 
 
 module.exports = { isUnique };
