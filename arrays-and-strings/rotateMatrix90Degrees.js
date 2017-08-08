@@ -10,7 +10,7 @@ function rotateMatrix90Degrees(matrix) {
     matrix.push([]);
 
     for (let i = 0; i < n; i++) {
-      matrix[matrix.length - 1].push(matrix[i].shift());
+      matrix[matrix.length - 1].unshift(matrix[i].shift());
     }
   }
 
