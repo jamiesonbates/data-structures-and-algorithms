@@ -13,6 +13,8 @@ function loopDetection(list) {
   while (list) {
     for (const node of arr) {
       if (list.next === node) {
+        console.log(list.next.next.next);
+        console.log(node.next.next);
         return node;
       }
     }
