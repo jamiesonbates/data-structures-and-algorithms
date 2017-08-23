@@ -5,7 +5,7 @@ const { suite, test } = require('mocha');
 
 const { SetOfStacks } = require('../setOfStacks');
 
-suite('function setOfStacks', () => {
+suite('class setOfStacks', () => {
   test('push should add an item into the set of stacks', () => {
     const stacks = new SetOfStacks(4);
 
