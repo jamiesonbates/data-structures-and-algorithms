@@ -25,7 +25,7 @@ const linkedList =  {
   }
 }
 
-suite('function stackMin', () => {
+suite('class stackMin', () => {
   test('push should place new item in array', () => {
     const stack = new StackMin();
 
