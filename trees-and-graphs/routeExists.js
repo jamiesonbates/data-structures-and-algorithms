@@ -10,17 +10,13 @@ function routeExists(Graph, start, end) {
   queue.push(start);
 
   while(queue.length) {
-    console.log(queue);
     const current = queue.shift();
-    console.log(current, end);
 
     if (current === end) {
       return true;
     }
 
-    console.log(Graph[current]);
-    // console.log(!Graph[current].visited);
-    if (Graph[current] && !Graph[current].visited) {
+    if (Graph.hasOwnProperty(current) && !Graph[current].visited) {
       for (const station of Graph[current].routes) {
         queue.push(station);
       }

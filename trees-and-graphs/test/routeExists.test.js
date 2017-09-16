@@ -36,10 +36,12 @@ suite('function routeExists', () => {
   });
 
   test('should return true if route exists', () => {
-    const testGraph = new Graph();
+    let testGraph = new Graph();
 
     assert.strictEqual(routeExists(testGraph, 'a', 'z'), true);
+    testGraph = new Graph();
     assert.strictEqual(routeExists(testGraph, 'b', 'z'), true);
+    testGraph = new Graph();
     assert.strictEqual(routeExists(testGraph, 'g', 'z'), true);
   })
 });
